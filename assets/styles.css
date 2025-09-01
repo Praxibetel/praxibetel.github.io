@@ -1,0 +1,179 @@
+/* ====== Base ====== */
+:root {
+  --bg: #fdfdfd;
+  --fg: #222;
+  --accent: #b30021;
+  --muted: #666;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body#page {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Containers ====== */
+.header-container,
+.section-container,
+.footer-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ====== Header ====== */
+#site-header {
+  border-bottom: 2px solid #eee;
+  background: #fafafa;
+}
+#site-logo {
+  width: 80px;
+  height: auto;
+  margin-right: 1rem;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+#site-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+#site-role {
+  font-weight: bold;
+  color: var(--accent);
+}
+#site-tagline {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+#contact-list {
+  list-style: none;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.contact-item {
+  margin: 0.1rem 0;
+}
+
+/* ====== Sections ====== */
+.section-title {
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.75rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.25rem;
+}
+.section-description {
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+/* ====== Experience ====== */
+.experience-item {
+  margin-bottom: 1rem;
+}
+.experience-title {
+  font-weight: bold;
+}
+.experience-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+.experience-bullets {
+  list-style: disc inside;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+
+/* ====== Projects ====== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fff;
+}
+.project-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+.project-meta {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.project-points {
+  list-style: disc inside;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* ====== Skills ====== */
+.skills-subtitle {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+.skills-list {
+  list-style: square inside;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+.skill-item {
+  margin: 0.2rem 0;
+}
+
+/* ====== Education & Leadership ====== */
+.education-list,
+.leadership-list {
+  list-style: disc inside;
+  margin-left: 1rem;
+  font-size: 0.95rem;
+}
+.education-item,
+.leadership-item {
+  margin-bottom: 0.5rem;
+}
+
+/* ====== Links ====== */
+.links-list {
+  list-style: none;
+  margin-left: 0;
+}
+.link-item {
+  margin: 0.25rem 0;
+}
+
+/* ====== Footer ====== */
+#site-footer {
+  border-top: 2px solid #eee;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  background: #fafafa;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
