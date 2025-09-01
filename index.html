@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hunter Browning — Mixed-Signal Embedded Design Engineer</title>
+  <meta name="description" content="Portfolio of Hunter Browning: mixed-signal & embedded hardware design, PCB layout, and hands-on engineering projects." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body id="page">
+
+  <!-- ====== Site Header ====== -->
+  <header id="site-header">
+    <div class="header-container">
+      <img src="assets/img/logo.png" alt="Hunter logo" id="site-logo" />
+      <div class="header-text">
+        <h1 id="site-title">Hunter Browning</h1>
+        <p id="site-role">Mixed-Signal Embedded Design Engineer</p>
+        <p id="site-tagline">Designing robust, future-ready electronics from analog input to embedded control. Specializing in low-noise and mixed-signal PCB systems.</p>
+        <ul id="contact-list">
+          <li class="contact-item"><strong>Location:</strong> Phoenix, AZ</li>
+          <li class="contact-item"><strong>Phone:</strong></li>
+          <li class="contact-item"><strong>Email:</strong></li>
+          <li class="contact-item"><a href="https://github.com/">GitHub</a> · <a href="https://www.linkedin.com/">LinkedIn</a> · <a href="assets/Hunter_Resume.pdf">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="site-main">
+
+    <!-- ====== Intro Section ====== -->
+    <section id="intro-section">
+      <div class="section-container">
+        <h2 class="section-title">About</h2>
+        <p class="section-description">
+          I build mixed-signal hardware that survives real-world conditions: RFI/EMI, ESD, thermal, and serviceability constraints. Recent work spans precision analog
+          signal chains, embedded control, and manufacturing handoff/change control for complex electromechanical systems.
+        </p>
+      </div>
+    </section>
+
+    <!-- ====== Experience Section ====== -->
+    <section id="experience-section">
+      <div class="section-container">
+        <h2 class="section-title">Experience</h2>
+
+        <article class="experience-item" id="exp-kla">
+          <h3 class="experience-title">Division Hardware Design Engineer — KLA</h3>
+          <p class="experience-meta">Feb 2024 – Present</p>
+          <ul class="experience-bullets">
+            <li>Designed/integrated 12+ PCBs (embedded + precision analog), boosting subsystem performance &gt;450% via optimized layout, routing, and component selection.</li>
+            <li>Built 3+ custom CAD assemblies for high-EMI environments; improved fixture robustness and reduced mechanical downtime ~9%.</li>
+            <li>Led Enovia-based change control and manufacturing handoff; enabled zero-defect production of 5+ board designs at scale.</li>
+            <li>Diagnosed 50+ cross-domain prototype issues; accelerated integration/test throughput by ~25% and authored detailed documentation.</li>
+            <li>Hardened systems with RFI shielding, thermal optimization, and piezo/ESD protections; improved field serviceability and reliability.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" id="exp-siccs">
+          <h3 class="experience-title">Lab / Equipment Manager — SICCS, Northern Arizona University</h3>
+          <p class="experience-meta">Jan 2020 – Jan 2023</p>
+          <ul class="experience-bullets">
+            <li>Project management, repair of 30+ test devices, in-house design/PCB work, parts procurement, and machine shop oversight.</li>
+          </ul>
+        </article>
+
+        <article class="experience-item" id="exp-paraprofessional">
+          <h3 class="experience-title">Electronics Teams Paraprofessional — Northern Arizona University</h3>
+          <p class="experience-meta">Aug 2020 – Dec 2022</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ====== Projects Section ====== -->
+    <section id="projects-section">
+      <div class="section-container">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card" id="project-nanotopo">
+            <h3 class="project-title">Nanotopography Machine — Electronics Stack</h3>
+            <p class="project-meta">Quadcell laser measurement signal chain from photodiodes → low-noise op-amps → 16-bit ADC → USB to PC.</p>
+            <ul class="project-points">
+              <li>Emphasis on light-tight layout, coax interconnects, thermal stability, EMI shielding, and ESD protection.</li>
+              <li>Future-proof PCB design for precision sensing.</li>
+            </ul>
+          </article>
+
+          <article class="project-card" id="project-adc-expansion">
+            <h3 class="project-title">Advanced ADC Expansion Board</h3>
+            <p class="project-meta">6-layer breakout for NI USB-6543 OEM expanding analog/digital I/O via coax/ribbon with modular jumper routing.</p>
+            <ul class="project-points">
+              <li>Focused on signal integrity, analog isolation, and zero crosstalk across dense differential/common-mode routing.</li>
+              <li>Passive board designed to support evolving analog integration needs.</li>
+            </ul>
+          </article>
+
+          <article class="project-card" id="project-active-filter">
+            <h3 class="project-title">Low-Noise Multichannel Active Filter</h3>
+            <p class="project-meta">10th-order Butterworth low-pass filter for laser displacement preamp outputs.</p>
+            <ul class="project-points">
+              <li>Targeted sub-5 MHz cutoff; five-stage active topology; channel matching and minimal phase ripple.</li>
+              <li>Optimized ADC performance downstream.</li>
+            </ul>
+          </article>
+
+          <article class="project-card" id="project-dataforth-bcms">
+            <h3 class="project-title">Dataforth BCMS — Industrial LiPo BMS</h3>
+            <p class="project-meta">MAQ20 modules + TI MSP430 MCU for monitoring, balancing, and safe charging.</p>
+            <ul class="project-points">
+              <li>High-current routing, chassis integration, thermal safety analysis to industrial criteria.</li>
+            </ul>
+          </article>
+
+          <article class="project-card" id="project-neutrino">
+            <h3 class="project-title">Neutrino Detector — Charged Plate Argon Chamber</h3>
+            <p class="project-meta">Charge-sensing detector with Raspberry Pi acquisition and MATLAB visualization.</p>
+          </article>
+
+          <article class="project-card" id="project-benchtop-psu">
+            <h3 class="project-title">Benchtop DC Power Supply</h3>
+            <p class="project-meta">Compact multi-output supply (AC wall, XT60, DC jack, banana, USB); 3D-printed enclosure, 1.8 kg footprint.</p>
+          </article>
+
+          <article class="project-card" id="project-wire-cutter">
+            <h3 class="project-title">Automatic Wire Cutter</h3>
+            <p class="project-meta">Arduino UNO + LCD/keypad, stepper drive, photo-interrupter detection; programmable lengths/counts.</p>
+          </article>
+
+          <article class="project-card" id="project-wafer-cal">
+            <h3 class="project-title">Magnetic Wafer Calibration Tool</h3>
+            <p class="project-meta">Electromechanical station using magnetic probe system and Galil motion controller firmware.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Skills Section ====== -->
+    <section id="skills-section">
+      <div class="section-container">
+        <h2 class="section-title">Skills</h2>
+
+        <h3 class="skills-subtitle">PCB & Hardware Design</h3>
+        <ul class="skills-list">
+          <li class="skill-item">Altium Designer, KiCad, OrCAD</li>
+          <li class="skill-item">High-speed layout & routing, enclosure-aware design</li>
+          <li class="skill-item">EMI/ESD mitigation, DFx (DFM/DFA/DFT), schematic capture</li>
+        </ul>
+
+        <h3 class="skills-subtitle">Mixed-Signal & Analog</h3>
+        <ul class="skills-list">
+          <li class="skill-item">Low-noise interfacing, op-amps, active filtering</li>
+          <li class="skill-item">ADC/DAC integration, differential signaling, impedance matching</li>
+          <li class="skill-item">Power distribution & grounding strategies</li>
+        </ul>
+
+        <h3 class="skills-subtitle">Simulation & Analysis</h3>
+        <ul class="skills-list">
+          <li class="skill-item">LTspice, PSpice for TI, NI Multisim; signal integrity analysis</li>
+          <li class="skill-item">Simulink, NI LabVIEW; thermal & EMI modeling</li>
+          <li class="skill-item">SolidWorks Simulation</li>
+        </ul>
+
+        <h3 class="skills-subtitle">Embedded Systems & Programming</h3>
+        <ul class="skills-list">
+          <li class="skill-item">C/C++, Python, Bash, MATLAB, .NET, SQL, MCU Assembly</li>
+          <li class="skill-item">Embedded firmware, RTOS fundamentals</li>
+          <li class="skill-item">UART/SPI/I²C, Galil motion controllers</li>
+        </ul>
+
+        <h3 class="skills-subtitle">Hands-On & Soft Skills</h3>
+        <ul class="skills-list">
+          <li class="skill-item">Fine-pitch SMD/through-hole soldering, scope/LA/DMM</li>
+          <li class="skill-item">Prototyping, troubleshooting, preventive maintenance</li>
+          <li class="skill-item">Documentation, public speaking, cross-functional collaboration</li>
+          <li class="skill-item">Bench organization & workflow optimization</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== Education & Leadership ====== -->
+    <section id="education-section">
+      <div class="section-container">
+        <h2 class="section-title">Education</h2>
+        <ul class="education-list">
+          <li class="education-item"><strong>B.S., Computer Hardware Engineering</strong> — Northern Arizona University (Jan 2020 – Dec 2023)</li>
+          <li class="education-item"><strong>A.S., Mathematical Physics</strong> — Georgia Military College (Oct 2016 – Dec 2017)</li>
+        </ul>
+
+        <h2 class="section-title">Societies & Leadership</h2>
+        <ul class="leadership-list">
+          <li class="leadership-item"><strong>IEEE — Chapter President:</strong> Led hands-on workshops (soldering, IoT security, EMC/RFI, 3D printing); built chapter website; organized industry seminars and trips.</li>
+          <li class="leadership-item"><strong>SAE — Programmer:</strong> Simulated thermodynamic stress/performance for SAE Baja powertrain components.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ====== Links Section ====== -->
+    <section id="links-section">
+      <div class="section-container">
+        <h2 class="section-title">Links</h2>
+        <ul class="links-list">
+          <li class="link-item"><a href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+          <li class="link-item"><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li class="link-item"><a href="assets/Hunter_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== Site Footer ====== -->
+  <footer id="site-footer">
+    <div class="footer-container">
+      <p>© <span id="current-year"></span> Hunter Browning. Built with plain HTML, CSS, and JS on GitHub Pages.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js"></script>
+  <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
